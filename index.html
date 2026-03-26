@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC RepairMan — Сборка и ремонт компьютеров</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-microchip"></i>
+                <span>PC Repair<span class="text-red">Man</span></span>
+            </a>
+            
+            <nav class="nav" id="nav">
+                <a href="#services">Услуги</a>
+                <a href="#prices">Цены</a>
+                <a href="#about">О нас</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="tel:+79990000000" class="phone">
+                    <i class="fas fa-phone"></i>
+                    <span>+7 (999) 000-00-00</span>
+                </a>
+                <a href="#contacts" class="btn btn-red">Заказать сборку</a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <h1 class="hero-title">
+                Собираем ПК, которые <span class="text-red">работают на тебя</span>
+            </h1>
+            <p class="hero-subtitle">
+                Мощные сборки. Честные цены. Гарантия качества
+            </p>
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Гарантия 2 года</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-clock"></i>
+                    <span>Сборка от 3 дней</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-ruble-sign"></i>
+                    <span>Цена от 5 000 ₽</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contacts" class="btn btn-red btn-large">Рассчитать стоимость</a>
+                <a href="#services" class="btn btn-outline btn-large">Наши услуги</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ПРЕИМУЩЕСТВА ========== -->
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <h2 class="section-title">3 причины выбрать <span class="text-red">PC RepairMan</span></h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Качественная работа</h3>
+                    <p>Тестируем каждый ПК перед выдачей. Никаких компромиссов — только проверенное железо.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Мощные сборки</h3>
+                    <p>Подбираем компоненты под ваши задачи: игры, работа, стримы, рендеринг.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Низкие цены</h3>
+                    <p>На 20-30% дешевле магазинов. Прозрачная смета без скрытых накруток.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== УСЛУГИ ========== -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Что мы <span class="text-red">умеем</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Сборка ПК под заказ</h3>
+                    <p>Индивидуальная подборка компонентов под ваш бюджет и задачи</p>
+                    <span class="service-price">от 5 000 ₽</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <h3>Апгрейд компьютера</h3>
+                    <p>Улучшим ваш текущий ПК без полной замены системы</p>
+                    <span class="service-price">от 3 000 ₽</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Диагностика и ремонт</h3>
+                    <p>Найдём и устраним любую неисправность</p>
+                    <span class="service-price">от 1 500 ₽</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Установка ПО</h3>
+                    <p>ОС, драйверы, оптимизация системы под максимум</p>
+                    <span class="service-price">от 2 000 ₽</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Чистка и обслуживание</h3>
+                    <p>Замена термопасты, удаление пыли, кабель-менеджмент</p>
+                    <span class="service-price">от 2 500 ₽</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Игровые конфигурации</h3>
+                    <p>Сборки для AAA-проектов, киберспорта и стримов</p>
+                    <span class="service-price">от 25 000 ₽</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ИСТОРИЯ КОМПАНИИ ========== -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">От гаража до <span class="text-red">профессионалов</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">
+                        Мы — обычные ребята, которые в 14 лет собрали свой первый ПК без помощи взрослых. 
+                        Сегодня <strong>PC RepairMan</strong> — это команда энтузиастов, которые знают о железе всё.
+                    </p>
+                    <p>
+                        Мы выросли из хобби в профессиональный сервис, но сохранили главный принцип: 
+                        <strong>делать честно и для людей.</strong>
+                    </p>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2025</div>
+                            <div class="timeline-text">Первый ПК своими руками</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2025</div>
+                            <div class="timeline-text">Открыли первую мастерскую</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2026</div>
+                            <div class="timeline-text">Полноценная компания PC RepairMan</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-placeholder">
+                        <i class="fas fa-users"></i>
+                        <span>Фото команды</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ЦЕНЫ ========== -->
+    <section class="prices" id="prices">
+        <div class="container">
+            <h2 class="section-title">Сборки под <span class="text-red">любой бюджет</span></h2>
+            <div class="prices-grid">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Бюджет</h3>
+                        <div class="price-amount">5 000 ₽</div>
+                        <span class="price-subtitle">Для учёбы и работы</span>
+                    </div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> Офисные задачи</li>
+                        <li><i class="fas fa-check"></i> Браузинг, документы</li>
+                        <li><i class="fas fa-check"></i> Онлайн-обучение</li>
+                        <li><i class="fas fa-check"></i> Базовая гарантия</li>
+                    </ul>
+                    <a href="#contacts" class="btn btn-outline">Заказать</a>
+                </div>
+                <div class="price-card price-card-popular">
+                    <div class="popular-badge">Популярный</div>
+                    <div class="price-header">
+                        <h3>Геймерский</h3>
+                        <div class="price-amount">50 000 ₽</div>
+                        <span class="price-subtitle">Для AAA-проектов</span>
+                    </div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> Высокий FPS в играх</li>
+                        <li><i class="fas fa-check"></i> RTX-видеокарта</li>
+                        <li><i class="fas fa-check"></i> Быстрый SSD</li>
+                        <li><i class="fas fa-check"></i> Расширенная гарантия</li>
+                        <li><i class="fas fa-check"></i> RGB-подсветка</li>
+                    </ul>
+                    <a href="#contacts" class="btn btn-red">Заказать</a>
+                </div>
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Ультра</h3>
+                        <div class="price-amount">100 000+ ₽</div>
+                        <span class="price-subtitle">Для стримов и 4K</span>
+                    </div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> Максимальная мощность</li>
+                        <li><i class="fas fa-check"></i> Топовые компоненты</li>
+                        <li><i class="fas fa-check"></i> Жидкостное охлаждение</li>
+                        <li><i class="fas fa-check"></i> Премиум гарантия</li>
+                        <li><i class="fas fa-check"></i> Персональный менеджер</li>
+                    </ul>
+                    <a href="#contacts" class="btn btn-outline">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ОТЗЫВЫ ========== -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Что говорят <span class="text-red">клиенты</span></h2>
+            <div class="reviews-slider">
+                <div class="reviews-track" id="reviewsTrack">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">«Собрали игровой ПК за 3 дня! Всё работает идеально, температуры в норме. Рекомендую!»</p>
+                        <div class="review-author">
+                            <div class="review-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="review-info">
+                                <strong>Алексей М.</strong>
+                                <span>Геймер</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">«Отличный сервис! Помогли с апгрейдом старого компьютера. Теперь летает!»</p>
+                        <div class="review-author">
+                            <div class="review-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="review-info">
+                                <strong>Мария К.</strong>
+                                <span>Дизайнер</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">«Честные цены и прозрачная смета. Никаких сюрпризов. Буду обращаться ещё!»</p>
+                        <div class="review-author">
+                            <div class="review-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="review-info">
+                                <strong>Дмитрий С.</strong>
+                                <span>Стример</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-controls">
+                    <button class="reviews-btn" id="prevReview"><i class="fas fa-chevron-left"></i></button>
+                    <button class="reviews-btn" id="nextReview"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Частые <span class="text-red">вопросы</span></h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Сколько времени занимает сборка?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Обычно сборка занимает от 3 до 7 дней в зависимости от сложности конфигурации и наличия комплектующих.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Даёте ли гарантию?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да! Мы предоставляем гарантию от 1 до 2 лет на все сборки. Также действует гарантия от производителей комплектующих.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Можно ли привезти свои комплектующие?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Конечно! Вы можете предоставить свои детали, мы только соберём и протестируем систему. Стоимость сборки в этом случае снижается.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Есть ли рассрочка?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, мы сотрудничаем с банками и предлагаем рассрочку до 12 месяцев без переплаты. Подробности уточняйте у менеджера.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== КОНТАКТЫ ========== -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Готовы заказать? <span class="text-red">Свяжитесь с нами</span></h2>
+            <div class="contacts-content">
+                <div class="contacts-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Телефон</strong>
+                            <a href="tel:+79990000000">+7 (950) 460-52-65</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-telegram"></i>
+                        <div>
+                            <strong>Telegram</strong>
+                            <a href="#">@pcrepairmann</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <a href="#">+7 (950) 460-52-65</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Адрес</strong>
+                            <span>г. Пермь, п. Сылва, ул. Кореева, д. 25</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="type" required>
+                            <option value="" disabled selected>Тип сборки</option>
+                            <option value="budget">Бюджет (5 000 ₽)</option>
+                            <option value="gamer">Геймерский (50 000 ₽)</option>
+                            <option value="ultra">Ультра (100 000+ ₽)</option>
+                            <option value="custom">Индивидуальная</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Комментарий" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-red btn-large btn-full">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <i class="fas fa-microchip"></i>
+                        <span>PC Repair<span class="text-red">Man</span></span>
+                    </a>
+                    <p>Сборка и ремонт компьютеров с душой</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Услуги</a>
+                    <a href="#prices">Цены</a>
+                    <a href="#about">О нас</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a href="#">Политика конфиденциальности</a>
+                <span>© 2026 PC RepairMan. Все права защищены.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
