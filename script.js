@@ -1,3 +1,14 @@
+// ========== ЖДЁМ ЗАГРУЗКИ DOM ==========
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // ВЕСЬ ваш код внутри этой функции
+    // Например:
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const nav = document.getElementById('nav');
+    
+    // ... остальной код
+    
+});
 // ========== МОБИЛЬНОЕ МЕНЮ ==========
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const nav = document.getElementById('nav');
@@ -571,28 +582,7 @@ window.addEventListener('load', () => {
 });
 
 // ========== ИНТЕГРАЦИЯ С НАВИГАЦИЕЙ ==========
-// Добавляем калькулятор в меню навигации
-const nav = document.getElementById('nav');
-if (nav) {
-    const calcLink = document.createElement('a');
-    calcLink.href = '#calculator';
-    calcLink.textContent = 'Калькулятор';
-    nav.appendChild(calcLink);
-}
 
-// Плавный скролл к калькулятору из чат-бота
-const originalGetBotResponse = getBotResponse;
-getBotResponse = function(userMessage) {
-    const lowerMessage = userMessage.toLowerCase();
-    
-    if (lowerMessage.includes('калькулятор')) {
-        setTimeout(() => {
-            document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
-        }, 500);
-    }
-    
-    return originalGetBotResponse(userMessage);
-};
 // ========== ГАЛЕРЕЯ ==========
 const filterBtns = document.querySelectorAll('.filter-btn');
 const galleryItems = document.querySelectorAll('.gallery-item');
@@ -813,7 +803,7 @@ function handleSwipe() {
 
 // ========== ИНТЕГРАЦИЯ С НАВИГАЦИЕЙ ==========
 // Добавляем галерею в меню
-const nav = document.getElementById('nav');
+
 if (nav && !nav.querySelector('a[href="#gallery"]')) {
     const galleryLink = document.createElement('a');
     galleryLink.href = '#gallery';
